@@ -13,7 +13,8 @@ npm install
 
 ## Stack
 <ul>
-  <li>Vite js  <li/>
+  <li>
+    <h1>Vite js<h1/>  <li/>
   <li>React Router  <li/>
   <li>React Redux <li/>
   <li>React Toastify  <li/>
