@@ -12,13 +12,13 @@ npm install
 ```
 
 ## Stack
--Vite js
--React router
--React redux
--React Toastify
--Axios
--Recharts
--Styled Components
+<h5>Vite js<h5/>
+<h5>React router<h5/>
+<h5>React redux<h5/>
+<h5>React Toastify<h5/>
+<h5>Axios<h5/>
+<h5>Recharts<h5/>
+<h5>Styled Components<h5/>
 
 ## Usage
 
