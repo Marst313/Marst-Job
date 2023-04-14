@@ -12,17 +12,8 @@ npm install
 ```
 
 ## Stack
-<ul>
-  <li>
-    <h1>Vite js<h1/>  <li/>
-  <li>React Router  <li/>
-  <li>React Redux <li/>
-  <li>React Toastify  <li/>
-  <li>Axios  <li/>
-  <li>Recharts  <li/>
-  <li>Styled Components<li/>
- <ul/> 
 
+-**Vite js** -**React Router** -**React Redux** -**React Toastify** -**Recharts** -**Styled Components**
 
 ## Usage
 
@@ -34,10 +25,10 @@ npm run start
 
 👤 **I Nyoman Dharma**
 
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
