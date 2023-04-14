@@ -13,7 +13,7 @@ npm install
 
 ## Stack
 
--**Vite js** -**React Router** -**React Redux** -**React Toastify** -**Recharts** -**Styled Components**
+_Vite js_ _React Router_ _React Redux_ _React Toastify_ _Recharts_ _Styled Components_
 
 ## Usage
 
