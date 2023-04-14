@@ -11,6 +11,15 @@
 npm install
 ```
 
+## Stack
+-Vite js
+-React router
+-React redux
+-React Toastify
+-Axios
+-Recharts
+-Styled Components
+
 ## Usage
 
 ```sh
