@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import main from '../assets/images/main.svg';
+import Wrapper from '../assets/wrappers/LandingPage';
+import { Logo } from '../components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiLoginBoxLine } from 'react-icons/ri';
+import { AboutUs } from '../components/AboutUs';
 import { MdLibraryAdd } from 'react-icons/md';
 import { BsFileBarGraphFill } from 'react-icons/bs';
-
-import Wrapper from '../assets/wrappers/LandingPage';
-import main from '../assets/images/main.svg';
-import { AboutUs } from '../components/AboutUs';
-import { Logo } from '../components';
-
+import { Support } from '../components/Support';
 const Landing = () => {
   return (
     <Wrapper>
