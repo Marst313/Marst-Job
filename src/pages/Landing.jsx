@@ -6,8 +6,9 @@ import { Logo } from "../components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RiLoginBoxLine } from "react-icons/ri";
 import { AboutUs } from "../components/AboutUs";
-import { MdLibraryAdd } from "react-icons/mb";
+import { MdLibraryAdd } from "react-icons/md";
 import { BsFileBarGraphFill } from "react-icons/bs";
+import { Support } from "../components/Support";
 
 const Landing = () => {
   return (
