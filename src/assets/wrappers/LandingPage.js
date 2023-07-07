@@ -54,6 +54,7 @@ const Wrapper = styled.main`
   }
   .container-works {
     margin-top: 7rem;
+    margin-bottom: 5rem;
     & h1 {
       text-align: center;
     }
@@ -61,10 +62,15 @@ const Wrapper = styled.main`
   hr {
     margin-top: 3rem;
   }
+
   .container-card {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    .desc {
+      position: absolute;
+      bottom: -3rem;
+    }
     & div {
       position: absolute;
       background: linear-gradient(160deg, rgba(240, 255, 66, 1) 0%, rgba(55, 156, 39, 1) 80%);

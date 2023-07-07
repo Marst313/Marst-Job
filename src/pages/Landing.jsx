@@ -5,6 +5,8 @@ import Wrapper from '../assets/wrappers/LandingPage';
 import { Logo } from '../components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiLoginBoxLine } from 'react-icons/ri';
+import { MdLibraryAdd } from 'react-icons/md';
+import { BsFileBarGraphFill } from 'react-icons/bs';
 
 const Landing = () => {
   return (
@@ -49,15 +51,21 @@ const Landing = () => {
               </div>
               <h5>Register</h5>
               <p>Your account</p>
+              <p className="desc">You need to create account first</p>
+            </article>
+
+            <article>
+              <div>
+                <MdLibraryAdd />
+              </div>
+              <h5>Add job</h5>
+              <p>Create new job</p>
             </article>
             <article>
-              <div></div>
-              <h5>Register</h5>
-              <p>Your account</p>
-            </article>
-            <article>
-              <div></div>
-              <h5>Register</h5>
+              <div>
+                <BsFileBarGraphFill />
+              </div>
+              <h5>Analysis</h5>
               <p>Your account</p>
             </article>
           </div>
