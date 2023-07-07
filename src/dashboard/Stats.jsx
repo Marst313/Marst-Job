@@ -1,8 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { showStats } from '../features/allJobs/allJobsSlice';
-import ChartsContainer from '../components/ChartsContainer';
-import StatsContainer from '../components/StatsContainer';
+import { Notes, StatsContainer, ChartsContainer } from '../components/';
 
 const Stats = () => {
   const dispatch = useDispatch();
@@ -13,10 +12,11 @@ const Stats = () => {
   }, []);
 
   return (
-    <>
+    <div style={{ position: 'relative', zIndex: '0' }}>
       <StatsContainer />
       {monthlyApplications.length > 0 && <ChartsContainer />}
-    </>
+      <Notes />
+    </div>
   );
 };
 

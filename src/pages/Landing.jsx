@@ -1,11 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import main from '../assets/images/main.svg';
-import Wrapper from '../assets/wrappers/LandingPage';
-import { Logo } from '../components';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { RiLoginBoxLine } from 'react-icons/ri';
-import { AboutUs } from "../components/AboutUs";
+import { MdLibraryAdd } from 'react-icons/md';
+import { BsFileBarGraphFill } from 'react-icons/bs';
+
+import Wrapper from '../assets/wrappers/LandingPage';
+import main from '../assets/images/main.svg';
+import { AboutUs } from '../components/AboutUs';
+import { Logo } from '../components';
 
 const Landing = () => {
   return (
@@ -31,11 +34,7 @@ const Landing = () => {
           <h1>
             job <span>tracking</span> app
           </h1>
-          <p>
-            Tracking your jobs application, Lorem, ipsum dolor sit amet
-            consectetur adipisicing elit. Iste aut repudiandae placeat quae eius
-            quis rem odio nesciunt libero obcaecati?
-          </p>
+          <p>Tracking your jobs application, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste aut repudiandae placeat quae eius quis rem odio nesciunt libero obcaecati?</p>
           <Link to="/register" className="btn btn-hero" type="button">
             Login/Register
           </Link>
@@ -74,7 +73,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <AboutUs/>
+      <AboutUs />
     </Wrapper>
   );
 };
