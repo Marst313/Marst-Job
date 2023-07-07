@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { AddJob, AllJobs, Profile, SharedLayout, Stats } from './dashboard';
+import { AddJob, AllJobs, Map, Profile, SharedLayout, Stats } from './dashboard';
 
 function App() {
   return (
@@ -22,7 +22,9 @@ function App() {
             <Route path="all-jobs" element={<AllJobs />} />
             <Route path="add-job" element={<AddJob />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="map" element={<Map />} />
           </Route>
+
           <Route path="landing" element={<Landing />} />
           <Route path="register" element={<Register />} />
           <Route path="*" element={<Error />} />

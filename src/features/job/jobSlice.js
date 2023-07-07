@@ -41,7 +41,7 @@ const jobSlice = createSlice({
       })
       .addCase(createJob.fulfilled, (state) => {
         state.isLoading = false;
-        toast.success(`Job Created`);
+        toast.success(`Job Created`, { autoClose: 500 });
       })
       .addCase(createJob.rejected, (state, action) => {
         state.isLoading = false;
@@ -51,18 +51,18 @@ const jobSlice = createSlice({
         toast.success(payload);
       })
       .addCase(deleteJob.rejected, (state, { payload }) => {
-        toast.error({ payload });
+        toast.error({ payload }, { autoClose: 500 });
       })
       .addCase(editJob.pending, (state) => {
         state.isLoading = true;
       })
       .addCase(editJob.fulfilled, (state) => {
         state.isLoading = false;
-        toast.success(`Job Modified`);
+        toast.success(`Job Modified`, { autoClose: 500 });
       })
       .addCase(editJob.rejected, (state, { payload }) => {
         state.isLoading = false;
-        toast.error(payload);
+        toast.error(payload, { autoClose: 500 });
       });
   },
 });

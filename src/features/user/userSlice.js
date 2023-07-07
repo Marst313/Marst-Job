@@ -61,9 +61,6 @@ export const userSlice = createSlice({
       state.user = null;
       state.isSidebarOpen = false;
       removeUserFromLocalStorage();
-      if (action.payload) {
-        toast.success(action.payload);
-      }
     },
   },
   extraReducers: (builder) => {
@@ -76,11 +73,10 @@ export const userSlice = createSlice({
         const { user } = action.payload;
         state.user = user;
         addUserToLocalStorage(user);
-        toast.success(`Hallo there ${user.name}`);
+        toast.success(`Hallo there ${user.name}`, { autoClose: 500 });
       })
       .addCase(registerUser.rejected, (state, action) => {
         state.isLoading = false;
-        toast.error(action.payload);
       })
       .addCase(loginUser.pending, (state) => {
         state.isLoading = true;
@@ -90,11 +86,10 @@ export const userSlice = createSlice({
         const { user } = action.payload;
         state.user = user;
         addUserToLocalStorage(user);
-        toast.success(`Welcome back ${user.name}`);
       })
       .addCase(loginUser.rejected, (state, action) => {
         state.isLoading = false;
-        toast.error(action.payload);
+        toast.error(action.payload, { autoClose: 500 });
       })
       .addCase(updateUser.pending, (state) => {
         state.isLoading = true;
@@ -104,14 +99,13 @@ export const userSlice = createSlice({
         const { user } = action.payload;
         state.user = user;
         addUserToLocalStorage(user);
-        toast.success(`User Updated!`);
       })
       .addCase(updateUser.rejected, (state, action) => {
         state.isLoading = false;
-        toast.error(action.payload);
+        toast.error(action.payload, { autoClose: 500 });
       })
       .addCase(clearStore.rejected, () => {
-        toast.error('There was an error...');
+        toast.error('There was an error...', { autoClose: 500 });
       });
   },
 });

@@ -59,7 +59,6 @@ const allJobsSlice = createSlice({
       })
       .addCase(getAllJobs.rejected, (state, action) => {
         state.isLoading = false;
-        toast.error(action.payload);
       })
       .addCase(showStats.pending, (state) => {
         state.isLoading = true;
@@ -71,7 +70,6 @@ const allJobsSlice = createSlice({
       })
       .addCase(showStats.rejected, (state, action) => {
         state.isLoading = false;
-        toast.error(action.payload);
       });
   },
 });
