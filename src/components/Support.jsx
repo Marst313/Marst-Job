@@ -1,64 +1,41 @@
 import React from "react";
 import Wrapper from "../assets/wrappers/Support";
+import sp from "../assets/images/support.svg";
 
 export const Support = () => {
   return (
     <Wrapper className="container">
-      <div>
-        <h1>Senang untuk membantu Anda</h1>
+      <div className="container-support">
+        <h1>Always there for you</h1>
         <p></p>
         <ul>
-          <b>Hubungi Kami:</b>
+          <b>Contact us :</b>
           <li>
-            Jangan ragu untuk menghubungi kami jika Anda memiliki pertanyaan
-            atau membutuhkan bantuan. Kami siap membantu Anda!
+            Don't hesitate to contact us if you have any questions or need help.
+            We are here to help you!
           </li>
           <li>
-            Kami senang mendengar dari Anda! Silakan hubungi kami jika Anda
-            memiliki pertanyaan, masukan, atau masalah yang perlu diselesaikan.
+            We'd love to hear from you! Please contact us if you are have
+            questions, feedback, or issues that need to be resolved.
           </li>
           <li>
-            Tim dukungan kami siap membantu Anda. Silakan jangan sungkan untuk
-            menghubungi kami melalui saluran komunikasi di bawah ini.
-          </li>
-        </ul>
-        <ul>
-          <b>Temukan Bantuan yang Anda Butuhkan:</b>
-          <li>
-            Kami menyediakan berbagai sumber daya untuk membantu Anda. Temukan
-            solusi untuk pertanyaan Anda di bawah ini atau hubungi kami untuk
-            bantuan lebih lanjut.
-          </li>
-          <li>
-            Cari jawaban untuk pertanyaan umum Anda dalam sumber daya dukungan
-            kami. Jika Anda tidak menemukan apa yang Anda cari, tim kami siap
-            membantu.
-          </li>
-          <li>
-            Kami telah menyusun informasi dan sumber daya penting untuk membantu
-            Anda. Temukan panduan pengguna, pertanyaan umum, dan kontak kami di
-            bawah ini.
+            Our support team is ready to help you. Please don't hesitate to
+            contact us via the communication channels below.
           </li>
         </ul>
-        <ul>
-          <b>Tim Dukungan Kami:</b>
+        <ul className="list">
           <li>
-            Kami memiliki tim dukungan yang berdedikasi dan siap membantu Anda
-            dengan setiap masalah yang Anda hadapi. Jangan ragu untuk
-            menghubungi kami!
+            <a href="mailto:bayiabayu@gmail.com">Bayiabayu@gmail.com</a>
           </li>
           <li>
-            Kami bangga dengan tim dukungan kami yang berpengalaman dan
-            responsif. Silakan hubungi kami jika Anda memerlukan bantuan apa
-            pun.
+            <a href="https://wa.me/6282253381937?text=Assalamualaikum Bang">
+              082253381937
+            </a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="bayiabayu@gmail.com">Bayiabayu@gmail.com</a>
-          </li>
-          <li>082253381937</li>
-        </ul>
+      </div>
+      <div className="container-support">
+        <img src={sp} alt="" />
       </div>
     </Wrapper>
   );
