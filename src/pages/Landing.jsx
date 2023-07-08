@@ -18,10 +18,10 @@ const Landing = () => {
           <a href="#Hiw">
             <h5>How it works</h5>
           </a>
-          <a href="">
+          <a href="#about">
             <h5>About us</h5>
           </a>
-          <a href="">
+          <a href="#support">
             <h5>Support</h5>
           </a>
         </div>
@@ -61,6 +61,7 @@ const Landing = () => {
               </div>
               <h5>Add job</h5>
               <p>Create new job</p>
+              <p className="desc">Add new job to keep tracking</p>
             </article>
             <article>
               <div>
@@ -68,11 +69,20 @@ const Landing = () => {
               </div>
               <h5>Analysis</h5>
               <p>Your account</p>
+              <p className="desc">Optimize your job applied with analysis</p>
             </article>
           </div>
         </div>
       </div>
       <AboutUs />
+      <hr />
+      <Support />
+      <div>
+        <footer className="footer-style">
+          <p style={{ color: 'black', fontSize: '60' }}>© 2023 Marst Job. All right reserved</p>
+        </footer>
+      </div>
+      ;
     </Wrapper>
   );
 };

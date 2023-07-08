@@ -12,7 +12,7 @@ const Wrapper = styled.div`
       width: 35px;
       height: 35px;
       align-self: center;
-      margin-top: -1.5rem;
+      margin-top: -0.25rem;
       color: var(--primary);
     }
   }
@@ -86,6 +86,7 @@ const Wrapper = styled.div`
     background-color: var(--primary);
     width: 20rem;
     padding: 0.25rem;
+    box-shadow: 5px 5px 5px var(--primary-green-dark);
     button {
       margin-left: 1rem;
       margin-bottom: 1rem;

@@ -1,14 +1,13 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
-  margin-top: 20rem;
+  margin-top: 5rem;
   margin-bottom: 3rem;
   padding-right: 5rem;
   img {
-    width: 50rem;
-    margin-left: 5rem;
+    display: none;
   }
   ul {
     list-style-type: disc;
@@ -16,10 +15,20 @@ const Wrapper = styled.div`
   .list {
     list-style-type: none;
   }
-  .container-support {
-    width: 50%;
-    width: 700px;
-    height: 500px;
+
+  @media (min-width: 992px) {
+    margin-top: 20rem;
+
+    img {
+      width: 50rem;
+      margin-left: 5rem;
+      display: flex;
+    }
+    .container-support {
+      width: 50%;
+      width: 700px;
+      height: 500px;
+    }
   }
 `;
 

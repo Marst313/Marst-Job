@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Wrapper from '../assets/wrappers/Notes';
 import { RiAddBoxFill } from 'react-icons/ri';
 import { GrClose } from 'react-icons/gr';
-import ModalNotes from './ModalNotes';
-import NewNotes from './NewNotes';
 
 const Notes = () => {
   const [modal, setModal] = useState(false);
@@ -20,15 +18,24 @@ const Notes = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setModal(false);
-    newNote.push({ ...notes, index: notes.index++ });
-  };
-
-  const handleDelete = (e) => {
-    const updatedNotes = newNote.filter((data) => data.index !== e);
+    const updatedNotes = [...newNote, { ...notes, index: notes.index++ }];
     setNewNote(updatedNotes);
+    localStorage.setItem('notes', JSON.stringify(updatedNotes));
   };
 
-  useEffect(() => {}, [newNote]);
+  const handleDelete = (index) => {
+    const updatedNotes = newNote.filter((data) => data.index !== index);
+    setNewNote(updatedNotes);
+    console.log(updatedNotes);
+  };
+
+  useEffect(() => {
+    const storedNotes = localStorage.getItem('notes');
+    if (storedNotes) {
+      const item = JSON.parse(storedNotes);
+      setNewNote(item);
+    }
+  }, []);
 
   return (
     <Wrapper className="container page">

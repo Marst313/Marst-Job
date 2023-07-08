@@ -62,9 +62,19 @@ const Wrapper = styled.main`
   hr {
     margin-top: 3rem;
   }
-
+  .footer-style {
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-green-light);
+    padding: 20px;
+    margin-top: 20rem;
+    margin-bottom: 0;
+  }
   .container-card {
     display: flex;
+    flex-direction: column;
+    gap: 5rem;
     justify-content: space-evenly;
     align-items: center;
     .desc {
@@ -106,6 +116,25 @@ const Wrapper = styled.main`
     }
   }
   @media (min-width: 992px) {
+    .container-card {
+      flex-direction: row;
+      margin-top: 5rem;
+    }
+    .container-works {
+      margin-top: 7rem;
+      margin-bottom: 5rem;
+
+      & h1 {
+        text-align: center;
+      }
+    }
+    .footer-style {
+      justify-content: center;
+      text-align: center;
+      background-color: var(--primary-green-light);
+      padding: 20px;
+      margin-bottom: -5rem;
+    }
     .page {
       grid-template-columns: 1fr 1fr;
       column-gap: 3rem;

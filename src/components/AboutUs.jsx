@@ -1,14 +1,14 @@
-import React from "react";
-import Wrapper from "../assets/wrappers/AboutUs";
-import Nyoman from "../assets/images/Nyoman.webp";
-import Ndaru from "../assets/images/Ndaru.jpg";
-import Bayu from "../assets/images/Bayu.webp";
-import Jawahir from "../assets/images/Jawahir.webp";
-import Bani from "../assets/images/Bani.webp";
+import React from 'react';
+import Wrapper from '../assets/wrappers/AboutUs';
+import Nyoman from '../assets/images/Nyoman.webp';
+import Ndaru from '../assets/images/Ndaru.jpg';
+import Bayu from '../assets/images/Bayu.webp';
+import Jawahir from '../assets/images/Jawahir.webp';
+import Bani from '../assets/images/Bani.webp';
 
 export const AboutUs = () => {
   return (
-    <Wrapper>
+    <Wrapper id="about">
       <section className="container-section">
         <div className="text-judul">
           <h1>Mau Kenalan ?</h1>
